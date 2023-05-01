@@ -24,8 +24,8 @@
 		$stmt = $conn->prepare($sql);
 		$stmt->bindParam(':nom', $nom);
 		$stmt->bindParam(':prenom', $prenom);
-	    $stmt->bindParam(':date_naissance', $date_naissance);
-	   $stmt->execute();
+	    $stmt->bindParam(':date_naissance', $date_de_naissance);
+	    $stmt->execute();
 
 			echo '<p style="color=black;">Les informations ont été enregistrées avec succès.</p>';
   
